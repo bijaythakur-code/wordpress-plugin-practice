@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 }
 
 
-/** 
+
 // add top-level administrative menu
 function myplugin_add_toplevel_menu()
 {
@@ -22,7 +22,7 @@ function myplugin_add_toplevel_menu()
         int   $position = null
       );
  */
-/** 
+
   add_menu_page(
     'MyPlugin Settings',
     'MyPlugin',
@@ -34,7 +34,7 @@ function myplugin_add_toplevel_menu()
   );
 }
 add_action('admin_menu', 'myplugin_add_toplevel_menu');
- */
+
 
 // add sub-level administrative menu
 function myplugin_add_sublevel_menu()
@@ -60,4 +60,4 @@ function myplugin_add_sublevel_menu()
     'myplugin_display_settings_page'
   );
 }
-add_action('admin_menu', 'myplugin_add_sublevel_menu');
+// add_action('admin_menu', 'myplugin_add_sublevel_menu');
